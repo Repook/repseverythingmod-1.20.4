@@ -24,6 +24,9 @@ public class ModItems {
     public static final Item GOLDEN_ROTTEN_FLESH = registerItem("golden_rotten_flesh",
             new Item(new FabricItemSettings().food(ModFoodComponents.GOLDEN_ROTTEN_FLESH)));
 
+    public static final Item ERODED_SHIELD = registerItem("eroded_shield",
+            new ShieldItem(new FabricItemSettings().maxDamage(500)));
+
     public static final Item PHANTOM_BOOTS = registerItem("phantom_boots",
             new PhantomBootsItem( ModArmorMaterials.PHANTOM,ArmorItem.Type.BOOTS,new FabricItemSettings()));
 

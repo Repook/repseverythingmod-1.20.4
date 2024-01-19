@@ -1,0 +1,100 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [64, 64],
+	"textures": {
+		"0": "repseverythingmod:item/eroded_shield",
+		"particle": "repseverythingmod:item/eroded_shield"
+	},
+	"elements": [
+		{
+			"from": [0, 8, 7],
+			"to": [16, 24, 10],
+			"faces": {
+				"north": {"uv": [0.75, 0.75, 4.75, 4.75], "texture": "#0"},
+				"east": {"uv": [0, 0.75, 0.75, 4.75], "texture": "#0"},
+				"south": {"uv": [5.5, 0.75, 9.5, 4.75], "texture": "#0"},
+				"west": {"uv": [4.75, 0.75, 5.5, 4.75], "texture": "#0"},
+				"up": {"uv": [4.75, 0.75, 0.75, 0], "texture": "#0"},
+				"down": {"uv": [8.75, 0, 4.75, 0.75], "texture": "#0"}
+			}
+		},
+		{
+			"from": [7, 13, 10],
+			"to": [9, 14, 12],
+			"rotation": {"angle": 0, "axis": "z", "origin": [8, 16, 11.75]},
+			"faces": {
+				"north": {"uv": [4, 5.25, 4.5, 5.5], "texture": "#0"},
+				"east": {"uv": [3.5, 5.25, 4, 5.5], "texture": "#0"},
+				"south": {"uv": [5, 5.25, 5.5, 5.5], "texture": "#0"},
+				"west": {"uv": [4.5, 5.25, 5, 5.5], "texture": "#0"},
+				"up": {"uv": [4.5, 5.25, 4, 4.75], "texture": "#0"},
+				"down": {"uv": [5, 4.75, 4.5, 5.25], "texture": "#0"}
+			}
+		},
+		{
+			"from": [7, 18, 10],
+			"to": [9, 19, 12],
+			"rotation": {"angle": 0, "axis": "z", "origin": [8, 16, 11.75]},
+			"faces": {
+				"north": {"uv": [2, 5.25, 2.5, 5.5], "texture": "#0"},
+				"east": {"uv": [1.5, 5.25, 2, 5.5], "texture": "#0"},
+				"south": {"uv": [3, 5.25, 3.5, 5.5], "texture": "#0"},
+				"west": {"uv": [2.5, 5.25, 3, 5.5], "texture": "#0"},
+				"up": {"uv": [2.5, 5.25, 2, 4.75], "texture": "#0"},
+				"down": {"uv": [3, 4.75, 2.5, 5.25], "texture": "#0"}
+			}
+		},
+		{
+			"from": [7, 13, 12],
+			"to": [9, 19, 13],
+			"rotation": {"angle": 0, "axis": "z", "origin": [8, 16, 11.75]},
+			"faces": {
+				"north": {"uv": [0.25, 5, 0.75, 6.5], "texture": "#0"},
+				"east": {"uv": [0, 5, 0.25, 6.5], "texture": "#0"},
+				"south": {"uv": [1, 5, 1.5, 6.5], "texture": "#0"},
+				"west": {"uv": [0.75, 5, 1, 6.5], "texture": "#0"},
+				"up": {"uv": [0.75, 5, 0.25, 4.75], "texture": "#0"},
+				"down": {"uv": [1.25, 4.75, 0.75, 5], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -90, 0],
+			"translation": [4.5, -9.75, 1.25]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, -90, 0],
+			"translation": [4.5, -9.75, 1.25]
+		},
+		"firstperson_righthand": {
+			"translation": [0, -7.25, 0]
+		},
+		"firstperson_lefthand": {
+			"translation": [0, -7.25, 0]
+		},
+		"ground": {
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"gui": {
+			"rotation": [0, 180, 0],
+			"translation": [0, -6.5, 0],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"head": {
+			"rotation": [0, 0, 90],
+			"translation": [7.25, -0.25, -7.5]
+		},
+		"fixed": {
+			"translation": [0, -7.75, 0]
+		}
+	},
+	"overrides": [
+		{
+			"predicate": {
+				"blocking": 1
+			},
+			"model": "repseverthingmod:item/eroded_shield_blocking"
+		}
+	]
+}
