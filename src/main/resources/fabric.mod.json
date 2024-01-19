@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "repseverythingmod",
+	"version": "${version}",
+	"name": "Rep's Everything Mod",
+	"description": "Made as part of a mod every day series. Has a little bit of everything.",
+	"authors": [
+		"Repook"
+	],
+	"contact": {
+		"sources": "https://github.com/Repook/repseverythingmod-1.20.4"
+	},
+	"license": "MIT License",
+	"icon": "assets/repseverythingmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"repook.repseverythingmod.RepsEverythingMod"
+		],
+		"fabric-datagen": [
+			"repook.repseverythingmod.RepsEverythingModDataGenerator"
+		],
+		"client": [
+			"repook.repseverythingmod.RepsEverythingModClient"
+		]
+	},
+	"mixins": [
+		"repseverythingmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.4",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"geckolib": ">=4.4.1",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

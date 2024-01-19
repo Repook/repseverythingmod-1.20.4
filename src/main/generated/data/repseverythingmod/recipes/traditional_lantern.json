@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": {
+      "item": "minecraft:red_wool"
+    },
+    "T": {
+      "item": "minecraft:torch"
+    },
+    "Y": {
+      "item": "minecraft:yellow_wool"
+    }
+  },
+  "pattern": [
+    "RYR",
+    "YTY",
+    "RYR"
+  ],
+  "result": {
+    "count": 4,
+    "item": "repseverythingmod:traditional_lantern"
+  }
+}

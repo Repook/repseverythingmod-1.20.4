@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "repseverythingmod:block/traditional_lantern",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "repseverythingmod:block/traditional_lantern"
+    },
+    "facing=south": {
+      "model": "repseverythingmod:block/traditional_lantern",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "repseverythingmod:block/traditional_lantern",
+      "y": 270
+    }
+  }
+}
