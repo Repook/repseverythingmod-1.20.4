@@ -3,8 +3,8 @@
 	"texture_size": [64, 64],
 	"textures": {
 		"1": "repseverythingmod:block/straw_top",
-		"2": "repseverythingmod:block/straw",
-		"particle": "repseverythingmod:block/straw"
+		"2": "repseverythingmod:block/straw_old",
+		"particle": "repseverythingmod:block/straw_old"
 	},
 	"elements": [
 		{

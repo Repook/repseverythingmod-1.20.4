@@ -24,7 +24,9 @@ public class RepsEverythingModClient implements ClientModInitializer {
         ModModelPredicateProvider.registerModModels();
 
         ParticleFactoryRegistry.getInstance().register(ModParticles.ERODED_DIRT_PARTICLE, ErodedDirtParticle.Factory :: new);
-        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.STRAW_BLOCK.getDefaultState().getBlock(), RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.STRAW_BLOCK, RenderLayer.getCutout());
+
+
 
 
     }

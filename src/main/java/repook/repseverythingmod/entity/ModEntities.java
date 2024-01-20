@@ -14,7 +14,7 @@ public class ModEntities {
     public static final EntityType<ErodedEntity> ERODED = Registry.register(
             Registries.ENTITY_TYPE, new Identifier(RepsEverythingMod.MOD_ID, "eroded"),
             FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, ErodedEntity::new)
-                    .dimensions(EntityDimensions.fixed(1.5f, 1.75f)).build());
+                    .dimensions(EntityDimensions.fixed(1, 1.75f)).build());
 
 
 

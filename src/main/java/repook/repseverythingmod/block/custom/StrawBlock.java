@@ -17,6 +17,7 @@ import net.minecraft.world.WorldView;
 
 public class StrawBlock extends Block {
 
+
     public static final int MAX_LAYERS = 8;
 
     public static final IntProperty LAYERS;

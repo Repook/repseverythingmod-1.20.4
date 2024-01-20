@@ -51,6 +51,11 @@ public class ErodedEntity extends HostileEntity implements GeoEntity {
 
     }
 
+    @Override
+    public boolean isPersistent() {
+        return true;
+    }
+
     private <T extends GeoAnimatable>PlayState predicate(AnimationState<T> tAnimationState) {
         if(tAnimationState.isMoving()) {
             tAnimationState.getController().setAnimation(RawAnimation.begin().then("animation.eroded.idle", Animation.LoopType.LOOP));
@@ -94,7 +99,6 @@ public class ErodedEntity extends HostileEntity implements GeoEntity {
             }
         }
     }
-
 
 
 

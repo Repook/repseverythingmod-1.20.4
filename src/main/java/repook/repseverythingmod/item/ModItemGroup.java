@@ -28,6 +28,7 @@ public class ModItemGroup {
                         entries.add(ModItems.ERODED_FRAGMENT);
                         entries.add(ModItems.ERODED_SHIELD);
                         entries.add(ModBlocks.STRAW_BLOCK);
+                        entries.add(ModBlocks.ERODED_BRICKS);
                         addCustomEnchantmentBooks(entries);
                     }).build());
 
