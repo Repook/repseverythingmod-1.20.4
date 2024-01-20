@@ -1,4 +1,4 @@
-package repook.util;
+package repook.repseverythingmod.util;
 
 import net.minecraft.client.item.ModelPredicateProviderRegistry;
 import net.minecraft.util.Identifier;

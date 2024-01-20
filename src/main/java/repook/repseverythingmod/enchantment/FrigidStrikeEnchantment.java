@@ -24,7 +24,13 @@ public class FrigidStrikeEnchantment extends Enchantment {
 
     @Override
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
-        target.setFrozenTicks(500);
+
+        if (getMaxLevel() == 1){
+            target.setFrozenTicks(500);
+        } else if (getMaxLevel() == 2) {
+            target.setFrozenTicks(1000);
+
+        }
 
 
         if (target instanceof LivingEntity) {

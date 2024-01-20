@@ -52,14 +52,22 @@ public class PhantomBootsItem extends ArmorItem implements GeoItem {
         });
     }
 
+
     @Override
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
-        // Check if the player is wearing the custom boots
-        if (entity instanceof net.minecraft.entity.player.PlayerEntity &&
-                ((net.minecraft.entity.player.PlayerEntity) entity).getEquippedStack(EquipmentSlot.FEET).getItem() instanceof PhantomBootsItem) {
-            // Grant slow falling effect
-            assert entity instanceof PlayerEntity;
-            ((PlayerEntity) entity).addStatusEffect(new StatusEffectInstance(StatusEffects.SLOW_FALLING, 20, 0, true, false));
+        if (!world.isClient && entity instanceof PlayerEntity) {
+            PlayerEntity player = (PlayerEntity) entity;
+
+            // Check if the player is wearing the custom boots in the FEET slot
+            if (player.getEquippedStack(EquipmentSlot.FEET) == stack) {
+                // Grant slow falling effect
+                player.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOW_FALLING, 20, 0, true, false));
+
+                // Decrease durability every second
+                if (world.getTime() % 20 == 0) { // Every 20 ticks is approximately 1 second
+                    stack.damage(1, player, (p) -> p.sendEquipmentBreakStatus(EquipmentSlot.FEET));
+                }
+            }
         }
 
         super.inventoryTick(stack, world, entity, slot, selected);

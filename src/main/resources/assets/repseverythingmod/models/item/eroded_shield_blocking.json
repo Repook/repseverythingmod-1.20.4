@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-	"0": "repseverythingmod:item/eroded_shield",
+		"0": "repseverythingmod:item/eroded_shield",
 		"particle": "repseverythingmod:item/eroded_shield"
 	},
 	"elements": [
@@ -21,7 +21,7 @@
 		{
 			"from": [7, 13, 10],
 			"to": [9, 14, 12],
-			"rotation": {"angle": 0, "axis": "z", "origin": [8, 16, 11.75]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 16, 11.75]},
 			"faces": {
 				"north": {"uv": [4, 5.25, 4.5, 5.5], "texture": "#0"},
 				"east": {"uv": [3.5, 5.25, 4, 5.5], "texture": "#0"},
@@ -34,7 +34,7 @@
 		{
 			"from": [7, 18, 10],
 			"to": [9, 19, 12],
-			"rotation": {"angle": 0, "axis": "z", "origin": [8, 16, 11.75]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 16, 11.75]},
 			"faces": {
 				"north": {"uv": [2, 5.25, 2.5, 5.5], "texture": "#0"},
 				"east": {"uv": [1.5, 5.25, 2, 5.5], "texture": "#0"},
@@ -47,7 +47,7 @@
 		{
 			"from": [7, 13, 12],
 			"to": [9, 19, 13],
-			"rotation": {"angle": 0, "axis": "z", "origin": [8, 16, 11.75]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 16, 11.75]},
 			"faces": {
 				"north": {"uv": [0.25, 5, 0.75, 6.5], "texture": "#0"},
 				"east": {"uv": [0, 5, 0.25, 6.5], "texture": "#0"},
@@ -68,10 +68,10 @@
 			"translation": [0.25, -5.25, -5.5]
 		},
 		"firstperson_righthand": {
-			"translation": [0, -7.25, 0]
+			"translation": [0, -2.25, 0]
 		},
 		"firstperson_lefthand": {
-			"translation": [0, -7.25, 0]
+			"translation": [0, -2.25, 0]
 		},
 		"ground": {
 			"scale": [0.5, 0.5, 0.5]

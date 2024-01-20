@@ -69,6 +69,25 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .input('B', Items.BLAZE_ROD)
                 .criterion(hasItem(Items.PHANTOM_MEMBRANE), conditionsFromItem(Items.PHANTOM_MEMBRANE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.PHANTOM_BOOTS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.STRAW_BLOCK)
+                .pattern("W W")
+                .pattern(" W ")
+                .pattern("W W")
+                .input('W', Items.WHEAT)
+                .criterion(hasItem(Items.WHEAT), conditionsFromItem(Items.WHEAT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.STRAW_BLOCK)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ERODED_SHIELD)
+                .pattern("EEE")
+                .pattern("ESE")
+                .pattern("EEE")
+                .input('S', Items.SHIELD)
+                .input('E', ModItems.ERODED_FRAGMENT)
+                .criterion(hasItem(ModItems.ERODED_FRAGMENT), conditionsFromItem(ModItems.ERODED_FRAGMENT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ERODED_FRAGMENT)));
+
+        offer2x2CompactingRecipe(exporter,RecipeCategory.DECORATIONS,ModBlocks.ERODED_BRICKS,ModItems.ERODED_FRAGMENT);
     }
 
 

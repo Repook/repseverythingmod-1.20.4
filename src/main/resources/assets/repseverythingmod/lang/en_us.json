@@ -6,6 +6,7 @@
   "item.repseverythingmod.golden_beetroot": "Golden Beetroot",
   "item.repseverythingmod.golden_sweet_berries": "Golden Sweet Berries",
   "item.repseverythingmod.golden_rotten_flesh": "Golden Rotten Flesh",
+  "item.repseverythingmod.eroded_fragment": "Eroded Fragment",
   "item.repseverythingmod.phantom_boots": "Phantom Boots",
   "item.repseverythingmod.eroded_shield": "Eroded Shield",
   "item.repseverythingmod.eroded": "Eroded Spawn Egg",
@@ -13,6 +14,8 @@
 
   "block.repseverythingmod.traditional_lantern": "Traditional Lantern",
   "block.repseverythingmod.lucky_cat": "Lucky Cat",
+  "block.repseverythingmod.straw_block": "Straw Block",
+  "block.repseverythingmod.eroded_bricks": "Eroded Bricks",
 
   "itemgroup.reps_everything_mod_group": "Rep's Everything Mod"
 }

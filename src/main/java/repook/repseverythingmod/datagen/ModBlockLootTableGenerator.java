@@ -12,6 +12,8 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         addDrop(ModBlocks.TRADITIONAL_LANTERN);
+        addDrop(ModBlocks.STRAW_BLOCK);
         addDrop(ModBlocks.LUCKY_CAT);
+        addDrop(ModBlocks.ERODED_BRICKS);
     }
 }

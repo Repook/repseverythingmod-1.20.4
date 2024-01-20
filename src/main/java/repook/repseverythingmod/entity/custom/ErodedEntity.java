@@ -11,6 +11,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
+import repook.repseverythingmod.particle.ModParticles;
 import software.bernie.geckolib.animatable.GeoEntity;
 import software.bernie.geckolib.core.animatable.GeoAnimatable;
 import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
@@ -50,6 +51,15 @@ public class ErodedEntity extends HostileEntity implements GeoEntity {
 
     }
 
+    private <T extends GeoAnimatable>PlayState predicate(AnimationState<T> tAnimationState) {
+        if(tAnimationState.isMoving()) {
+            tAnimationState.getController().setAnimation(RawAnimation.begin().then("animation.eroded.idle", Animation.LoopType.LOOP));
+        }
+
+        tAnimationState.getController().setAnimation(RawAnimation.begin().then("animation.eroded.idle", Animation.LoopType.LOOP));
+        return PlayState.CONTINUE;
+    }
+
     @Override
     public void tick() {
         super.tick();
@@ -63,33 +73,29 @@ public class ErodedEntity extends HostileEntity implements GeoEntity {
             double z = getZ();
 
             // Adjust the particle spawn position based on the entity size
-            double yOffset = getHeight() / 9.0;
+            double yOffset = getHeight() / 3; // Set yOffset to half of the entity height
 
             Random random = world.random;
 
-            for (int i = 0; i < 5; i++) { // Spawn 5 particles in a random pattern
-                double offsetX = random.nextGaussian() * 0.2;
+            for (int i = 0; i < 3; i++) { // Spawn 3 particles in a spiral pattern
+                double angle = random.nextDouble() * Math.PI * 2.0; // Random angle for spiral
+                double radius = random.nextDouble() * 0.5 + 0.5; // Random radius for spiral (starting from 0.5)
+
+                double offsetX = radius * Math.cos(angle);
                 double offsetY = random.nextGaussian() * 0.1;
-                double offsetZ = random.nextGaussian() * 0.2;
+                double offsetZ = radius * Math.sin(angle);
 
-                double velocityX = random.nextGaussian() * 0.02;
-                double velocityY = random.nextGaussian() * 0.02;
-                double velocityZ = random.nextGaussian() * 0.02;
+                double velocityX = -offsetZ * 0.5; // Adjust X velocity for the spiral effect
+                double velocityY = offsetY * 0.8; // Adjust Y velocity for upward movement
+                double velocityZ = offsetX * 0.5; // Adjust Z velocity for the spiral effect
 
-                // Spawn particles at the entity's feet with random offsets and velocities
-                world.addParticle(ParticleTypes.DUST_PLUME, x + offsetX, y + 0.5f + offsetY, z + offsetZ, velocityX, velocityY, velocityZ);
+                // Spawn particles at the entity's chest level with random offsets and velocities
+                world.addParticle(ModParticles.ERODED_DIRT_PARTICLE, x + offsetX, y + yOffset + offsetY, z + offsetZ, velocityX, velocityY, velocityZ);
             }
         }
     }
 
-    private <T extends GeoAnimatable>PlayState predicate(AnimationState<T> tAnimationState) {
-        if(tAnimationState.isMoving()) {
-            tAnimationState.getController().setAnimation(RawAnimation.begin().then("animation.eroded.idle", Animation.LoopType.LOOP));
-        }
 
-        tAnimationState.getController().setAnimation(RawAnimation.begin().then("animation.eroded.idle", Animation.LoopType.LOOP));
-        return PlayState.CONTINUE;
-    }
 
 
     @Override

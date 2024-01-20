@@ -17,6 +17,7 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
     blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.TRADITIONAL_LANTERN);
+    //blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.STRAW_BLOCK);
 
     blockStateModelGenerator.registerParentedItemModel(ModItems.ERODED_SPAWN_EGG, ModelIds.getMinecraftNamespacedItem("template_spawn_egg"));
 

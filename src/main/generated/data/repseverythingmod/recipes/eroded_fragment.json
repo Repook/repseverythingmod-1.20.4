@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "E": {
+      "item": "repseverythingmod:eroded_fragment"
+    },
+    "S": {
+      "item": "minecraft:shield"
+    }
+  },
+  "pattern": [
+    "EEE",
+    "ESE",
+    "EEE"
+  ],
+  "result": {
+    "item": "repseverythingmod:eroded_shield"
+  }
+}

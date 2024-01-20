@@ -25,7 +25,9 @@ public class ModItemGroup {
                         entries.add(ModItems.LUCKY_CAT_BLOCK_ITEM);
                         entries.add(ModItems.ERODED_SPAWN_EGG);
                         entries.add(ModItems.PHANTOM_BOOTS);
+                        entries.add(ModItems.ERODED_FRAGMENT);
                         entries.add(ModItems.ERODED_SHIELD);
+                        entries.add(ModBlocks.STRAW_BLOCK);
                         addCustomEnchantmentBooks(entries);
                     }).build());
 

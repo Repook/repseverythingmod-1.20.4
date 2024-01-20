@@ -9,6 +9,7 @@ import net.minecraft.util.Identifier;
 import repook.repseverythingmod.RepsEverythingMod;
 import repook.repseverythingmod.block.ModBlocks;
 import repook.repseverythingmod.entity.ModEntities;
+import repook.repseverythingmod.item.custom.ErodedShieldItem;
 import repook.repseverythingmod.item.custom.LuckyCatBlockItem;
 import repook.repseverythingmod.item.custom.PhantomBootsItem;
 
@@ -25,10 +26,13 @@ public class ModItems {
             new Item(new FabricItemSettings().food(ModFoodComponents.GOLDEN_ROTTEN_FLESH)));
 
     public static final Item ERODED_SHIELD = registerItem("eroded_shield",
-            new ShieldItem(new FabricItemSettings().maxDamage(500)));
+            new ErodedShieldItem(new FabricItemSettings().maxDamage(500)));
+
+    public static final Item ERODED_FRAGMENT = registerItem("eroded_fragment",
+            new Item(new FabricItemSettings()));
 
     public static final Item PHANTOM_BOOTS = registerItem("phantom_boots",
-            new PhantomBootsItem( ModArmorMaterials.PHANTOM,ArmorItem.Type.BOOTS,new FabricItemSettings()));
+            new PhantomBootsItem( ModArmorMaterials.PHANTOM,ArmorItem.Type.BOOTS,new FabricItemSettings().maxDamage(500)));
 
     public static final Item LUCKY_CAT_BLOCK_ITEM = registerItem("lucky_cat",
             new LuckyCatBlockItem(ModBlocks.LUCKY_CAT, new FabricItemSettings()));

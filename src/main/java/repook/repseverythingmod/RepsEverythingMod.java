@@ -13,6 +13,7 @@ import repook.repseverythingmod.entity.ModEntities;
 import repook.repseverythingmod.entity.custom.ErodedEntity;
 import repook.repseverythingmod.item.ModItemGroup;
 import repook.repseverythingmod.item.ModItems;
+import repook.repseverythingmod.particle.ModParticles;
 import software.bernie.geckolib.GeckoLib;
 
 public class RepsEverythingMod implements ModInitializer {
@@ -28,6 +29,7 @@ public class RepsEverythingMod implements ModInitializer {
 		ModEnchantments.registerModEnchantments();
 
 		GeckoLib.initialize();
+		ModParticles.registerParticles();
 
 		FabricDefaultAttributeRegistry.register(ModEntities.ERODED, ErodedEntity.setAttributes());
 	}
