@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "repseverythingmod:block/eroded_bricks",
+    "side": "repseverythingmod:block/eroded_bricks",
+    "top": "repseverythingmod:block/eroded_bricks"
+  }
+}

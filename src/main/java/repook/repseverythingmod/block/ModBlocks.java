@@ -2,9 +2,8 @@ package repook.repseverythingmod.block;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.SnowBlock;
+import net.minecraft.block.*;
+import net.minecraft.entity.mob.BlazeEntity;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.FoodComponents;
 import net.minecraft.item.Item;
@@ -23,7 +22,18 @@ public static final Block TRADITIONAL_LANTERN = registerBlock("traditional_lante
         ,new TraditionalLanternBlock(FabricBlockSettings.copyOf(Blocks.LANTERN).breakInstantly()));
 
     public static final Block ERODED_BRICKS = registerBlock("eroded_bricks"
+            ,new Block(FabricBlockSettings.copyOf(Blocks.PACKED_MUD)));
+
+    public static final Block ERODED_BRICK_STAIRS = registerBlock("eroded_brick_stairs",
+            new StairsBlock(ModBlocks.ERODED_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.MUD_BRICK_STAIRS)));
+
+    public static final Block ERODED_BRICK_SLAB = registerBlock("eroded_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.MUD_BRICK_SLAB)));
+
+
+    public static final Block CHISELED_ERODED_BRICKS = registerBlock("chiseled_eroded_bricks"
             ,new Block(FabricBlockSettings.copyOf(Blocks.MUD_BRICKS)));
+
 
     public static final Block STRAW_BLOCK = registerBlock("straw_block"
             ,new StrawBlock(FabricBlockSettings.copyOf(Blocks.HAY_BLOCK).nonOpaque()));

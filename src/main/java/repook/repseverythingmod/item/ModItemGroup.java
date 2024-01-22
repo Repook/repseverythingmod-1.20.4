@@ -14,6 +14,8 @@ import repook.repseverythingmod.enchantment.ModEnchantments;
 
 public class ModItemGroup {
 
+
+
     public static final ItemGroup REPS_EVERYTHING_MOD_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(RepsEverythingMod.MOD_ID, "reps_everything_mod_group"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.reps_everything_mod_group"))
@@ -23,12 +25,16 @@ public class ModItemGroup {
                         entries.add(ModItems.GOLDEN_ROTTEN_FLESH);
                         entries.add(ModBlocks.TRADITIONAL_LANTERN);
                         entries.add(ModItems.LUCKY_CAT_BLOCK_ITEM);
-                        entries.add(ModItems.ERODED_SPAWN_EGG);
                         entries.add(ModItems.PHANTOM_BOOTS);
+                        entries.add(ModItems.ERODED_SPAWN_EGG);
+                        entries.add(ModBlocks.ERODED_BRICKS);
+                        entries.add(ModBlocks.ERODED_BRICK_STAIRS);
+                        entries.add(ModBlocks.ERODED_BRICK_SLAB);
+                        entries.add(ModBlocks.CHISELED_ERODED_BRICKS);
                         entries.add(ModItems.ERODED_FRAGMENT);
                         entries.add(ModItems.ERODED_SHIELD);
+                        entries.add(ModItems.SCARECROW);
                         entries.add(ModBlocks.STRAW_BLOCK);
-                        entries.add(ModBlocks.ERODED_BRICKS);
                         addCustomEnchantmentBooks(entries);
                     }).build());
 

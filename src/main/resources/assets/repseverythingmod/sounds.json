@@ -1,0 +1,22 @@
+{
+  "entity_eroded_ambient": {
+    "subtitle": "sounds.repseverythingmod.entity_eroded_ambient",
+    "sounds": [
+      "repseverythingmod:entity_eroded_ambient"
+    ]
+  },
+
+  "entity_eroded_hurt": {
+    "subtitle": "sounds.repseverythingmod.entity_eroded_hurt",
+    "sounds": [
+      "repseverythingmod:entity_eroded_hurt"
+    ]
+  },
+
+  "entity_eroded_death": {
+    "subtitle": "sounds.repseverythingmod.entity_eroded_death",
+    "sounds": [
+      "repseverythingmod:entity_eroded_death"
+    ]
+  }
+}

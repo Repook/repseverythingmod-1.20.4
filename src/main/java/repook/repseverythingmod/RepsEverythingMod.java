@@ -11,9 +11,11 @@ import repook.repseverythingmod.block.entity.ModBlockEntities;
 import repook.repseverythingmod.enchantment.ModEnchantments;
 import repook.repseverythingmod.entity.ModEntities;
 import repook.repseverythingmod.entity.custom.ErodedEntity;
+import repook.repseverythingmod.entity.custom.ScarecrowEntity;
 import repook.repseverythingmod.item.ModItemGroup;
 import repook.repseverythingmod.item.ModItems;
 import repook.repseverythingmod.particle.ModParticles;
+import repook.repseverythingmod.sound.ModSounds;
 import software.bernie.geckolib.GeckoLib;
 
 public class RepsEverythingMod implements ModInitializer {
@@ -22,6 +24,7 @@ public class RepsEverythingMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModSounds.registerSounds();
 		ModItemGroup.registerItemGroup();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
@@ -32,6 +35,7 @@ public class RepsEverythingMod implements ModInitializer {
 		ModParticles.registerParticles();
 
 		FabricDefaultAttributeRegistry.register(ModEntities.ERODED, ErodedEntity.setAttributes());
+		FabricDefaultAttributeRegistry.register(ModEntities.SCARECROW, ScarecrowEntity.setAttributes());
 	}
 
 }

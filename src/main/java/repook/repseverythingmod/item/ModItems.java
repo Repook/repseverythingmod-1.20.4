@@ -2,6 +2,8 @@ package repook.repseverythingmod.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.block.DecoratedPotBlock;
+import net.minecraft.block.DecoratedPotPatterns;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -12,6 +14,7 @@ import repook.repseverythingmod.entity.ModEntities;
 import repook.repseverythingmod.item.custom.ErodedShieldItem;
 import repook.repseverythingmod.item.custom.LuckyCatBlockItem;
 import repook.repseverythingmod.item.custom.PhantomBootsItem;
+import repook.repseverythingmod.item.custom.ScarecrowItem;
 
 public class ModItems {
 
@@ -31,6 +34,14 @@ public class ModItems {
     public static final Item ERODED_FRAGMENT = registerItem("eroded_fragment",
             new Item(new FabricItemSettings()));
 
+    public static final Item EARTH_POTTERY_SHERD = registerItem("earth_pottery_sherd",
+            new Item(new FabricItemSettings()));
+
+    public static final Item SCARECROW = registerItem("scarecrow",
+            new ScarecrowItem(new FabricItemSettings().maxCount(16)));
+
+
+
     public static final Item PHANTOM_BOOTS = registerItem("phantom_boots",
             new PhantomBootsItem( ModArmorMaterials.PHANTOM,ArmorItem.Type.BOOTS,new FabricItemSettings().maxDamage(500)));
 
@@ -39,6 +50,9 @@ public class ModItems {
 
     public static final Item ERODED_SPAWN_EGG = registerItem("eroded",
             new SpawnEggItem(ModEntities.ERODED,0x846a4e,0x493228, new FabricItemSettings()));
+
+    public static final Item SCARECROW_SPAWN_EGG = registerItem("scarecrow_spawn_egg",
+            new SpawnEggItem(ModEntities.SCARECROW,0x846a4e,0x493228, new FabricItemSettings()));
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, new Identifier(RepsEverythingMod.MOD_ID,name),item);

@@ -4,14 +4,20 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
+import net.minecraft.entity.damage.DamageSource;
+import net.minecraft.entity.mob.BlazeEntity;
 import net.minecraft.entity.mob.HostileEntity;
 import net.minecraft.entity.passive.ChickenEntity;
 import net.minecraft.entity.passive.MerchantEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.GlassBottleItem;
 import net.minecraft.particle.ParticleTypes;
+import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
+import org.jetbrains.annotations.Nullable;
 import repook.repseverythingmod.particle.ModParticles;
+import repook.repseverythingmod.sound.ModSounds;
 import software.bernie.geckolib.animatable.GeoEntity;
 import software.bernie.geckolib.core.animatable.GeoAnimatable;
 import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
@@ -100,7 +106,21 @@ public class ErodedEntity extends HostileEntity implements GeoEntity {
         }
     }
 
+    @Nullable
+    @Override
+    protected SoundEvent getAmbientSound() {
+        return ModSounds.ENTITY_ERODED_AMBIENT;
+    }
 
+    @Override
+    protected SoundEvent getHurtSound(DamageSource source) {
+        return ModSounds.ENTITY_ERODED_HURT;
+    }
+
+    @Override
+    protected SoundEvent getDeathSound() {
+        return ModSounds.ENTITY_ERODED_DEATH;
+    }
 
     @Override
     public AnimatableInstanceCache getAnimatableInstanceCache() {

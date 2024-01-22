@@ -59,20 +59,18 @@ public class PhantomBootsItem extends ArmorItem implements GeoItem {
         if (!world.isClient && entity instanceof PlayerEntity) {
             PlayerEntity player = (PlayerEntity) entity;
 
-            // Check if the player is wearing the custom boots in the FEET slot
+
             if (player.getEquippedStack(EquipmentSlot.FEET) == stack && !player.isOnGround()) {
-                // Grant slow falling effect
+
                 player.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOW_FALLING, 20, 0, true, false));
 
-                // Log to check if this block is reached
-                System.out.println("Applying slow falling effect");
 
-                // Decrease durability every second
-                if (world.getTime() % 20 == 0) { // Every 20 ticks is approximately 1 second
+
+
+                if (world.getTime() % 20 == 0) {
                     stack.damage(1, player, (p) -> {
                         p.sendEquipmentBreakStatus(EquipmentSlot.FEET);
-                        // Log to check if this block is reached
-                        System.out.println("Decreasing durability");
+
                     });
                 }
             }

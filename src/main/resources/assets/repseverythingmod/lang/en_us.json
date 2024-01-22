@@ -10,12 +10,19 @@
   "item.repseverythingmod.phantom_boots": "Phantom Boots",
   "item.repseverythingmod.eroded_shield": "Eroded Shield",
   "item.repseverythingmod.eroded": "Eroded Spawn Egg",
+  "item.repseverythingmod.scarecrow_spawn_egg": "Scarecrow Spawn Egg",
+  "item.repseverythingmod.scarecrow": "Scarecrow",
   "entity.repseverythingmod.eroded": "Eroded",
+  "entity.repseverythingmod.scarecrow": "Scarecrow",
 
   "block.repseverythingmod.traditional_lantern": "Traditional Lantern",
   "block.repseverythingmod.lucky_cat": "Lucky Cat",
   "block.repseverythingmod.straw_block": "Straw Block",
   "block.repseverythingmod.eroded_bricks": "Eroded Bricks",
+  "block.repseverythingmod.eroded_bricks": "Eroded Bricks",
+  "block.repseverythingmod.eroded_brick_stairs": "Eroded Brick Stairs",
+  "block.repseverythingmod.eroded_brick_slab": "Eroded Brick Slab",
+  "block.repseverythingmod.chiseled_eroded_bricks": "Chiseled Eroded Bricks",
 
   "itemgroup.reps_everything_mod_group": "Rep's Everything Mod"
 }

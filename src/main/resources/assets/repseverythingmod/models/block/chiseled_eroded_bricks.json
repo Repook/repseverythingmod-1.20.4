@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "repseverythingmod:block/chiseled_eroded_bricks"
+  }
+}

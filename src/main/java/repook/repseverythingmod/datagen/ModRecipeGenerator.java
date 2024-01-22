@@ -88,6 +88,19 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.ERODED_FRAGMENT)));
 
         offer2x2CompactingRecipe(exporter,RecipeCategory.DECORATIONS,ModBlocks.ERODED_BRICKS,ModItems.ERODED_FRAGMENT);
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SCARECROW)
+                .pattern(" P ")
+                .pattern("FHF")
+                .pattern(" F ")
+                .input('H', ModBlocks.STRAW_BLOCK)
+                .input('P', Items.CARVED_PUMPKIN)
+                .input('F', Items.STICK)
+                .criterion(hasItem(Items.HAY_BLOCK), conditionsFromItem(Items.HAY_BLOCK))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.SCARECROW)));
+
+
     }
 
 

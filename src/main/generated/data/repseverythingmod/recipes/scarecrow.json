@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "minecraft:stick"
+    },
+    "H": {
+      "item": "repseverythingmod:straw_block"
+    },
+    "P": {
+      "item": "minecraft:carved_pumpkin"
+    }
+  },
+  "pattern": [
+    " P ",
+    "FHF",
+    " F "
+  ],
+  "result": {
+    "item": "repseverythingmod:scarecrow"
+  }
+}
