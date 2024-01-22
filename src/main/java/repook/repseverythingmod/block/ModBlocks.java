@@ -30,6 +30,9 @@ public static final Block TRADITIONAL_LANTERN = registerBlock("traditional_lante
     public static final Block ERODED_BRICK_SLAB = registerBlock("eroded_brick_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.MUD_BRICK_SLAB)));
 
+    public static final Block ERODED_BRICK_WALL = registerBlock("eroded_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.MUD_BRICK_WALL)));
+
 
     public static final Block CHISELED_ERODED_BRICKS = registerBlock("chiseled_eroded_bricks"
             ,new Block(FabricBlockSettings.copyOf(Blocks.MUD_BRICKS)));

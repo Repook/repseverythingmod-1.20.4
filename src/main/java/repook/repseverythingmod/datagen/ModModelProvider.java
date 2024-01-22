@@ -32,6 +32,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         eroded.stairs(ModBlocks.ERODED_BRICK_STAIRS);
         eroded.slab(ModBlocks.ERODED_BRICK_SLAB);
+        eroded.wall(ModBlocks.ERODED_BRICK_WALL);
 
 
     }

@@ -30,6 +30,7 @@ public class ModItemGroup {
                         entries.add(ModBlocks.ERODED_BRICKS);
                         entries.add(ModBlocks.ERODED_BRICK_STAIRS);
                         entries.add(ModBlocks.ERODED_BRICK_SLAB);
+                        entries.add(ModBlocks.ERODED_BRICK_WALL);
                         entries.add(ModBlocks.CHISELED_ERODED_BRICKS);
                         entries.add(ModItems.ERODED_FRAGMENT);
                         entries.add(ModItems.ERODED_SHIELD);
