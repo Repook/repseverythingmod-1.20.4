@@ -1,6 +1,7 @@
 package repook.repseverythingmod.block.custom;
 
 import net.minecraft.block.*;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.state.StateManager;
@@ -8,11 +9,15 @@ import net.minecraft.state.property.DirectionProperty;
 import net.minecraft.state.property.IntProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.state.property.Property;
+import net.minecraft.util.ActionResult;
+import net.minecraft.util.Hand;
+import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
+import net.minecraft.world.World;
 import net.minecraft.world.WorldView;
 
 public class StrawBlock extends Block {
@@ -26,6 +31,8 @@ public class StrawBlock extends Block {
         super(settings);
         this.setDefaultState(this.stateManager.getDefaultState().with(LAYERS, 1));
     }
+
+
 
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {

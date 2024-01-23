@@ -1,12 +1,15 @@
 package repook.repseverythingmod.entity.custom;
 
 import net.minecraft.entity.EntityType;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.mob.BlazeEntity;
+import net.minecraft.entity.mob.BreezeEntity;
 import net.minecraft.entity.mob.HostileEntity;
+import net.minecraft.entity.mob.VexEntity;
 import net.minecraft.entity.passive.ChickenEntity;
 import net.minecraft.entity.passive.MerchantEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -104,6 +107,17 @@ public class ErodedEntity extends HostileEntity implements GeoEntity {
                 world.addParticle(ModParticles.ERODED_DIRT_PARTICLE, x + offsetX, y + yOffset + offsetY, z + offsetZ, velocityX, velocityY, velocityZ);
             }
         }
+    }
+
+
+    private void drillAttack(LivingEntity target){
+
+
+    }
+
+    @Override
+    protected void attackLivingEntity(LivingEntity target) {
+        this.drillAttack(target);
     }
 
     @Nullable

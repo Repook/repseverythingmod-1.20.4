@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "repseverythingmod:eroded_bricks",
+    "repseverythingmod:eroded_brick_stairs",
+    "repseverythingmod:eroded_brick_slab",
+    "repseverythingmod:eroded_brick_wall",
+    "repseverythingmod:chiseled_eroded_bricks"
+  ]
+}

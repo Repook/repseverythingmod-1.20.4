@@ -25,5 +25,10 @@
   "block.repseverythingmod.eroded_brick_wall": "Eroded Brick Wall",
   "block.repseverythingmod.chiseled_eroded_bricks": "Chiseled Eroded Bricks",
 
+  "sounds.repseverythingmod.entity_eroded_ambient": "Eroded shuffles",
+  "sounds.repseverythingmod.entity_eroded_hurt": "Eroded hurt",
+  "sounds.repseverythingmod.entity_eroded_death": "Eroded dies",
+  "sounds.repseverythingmod.item_conch_shell": "Conch Shell wails",
+
   "itemgroup.reps_everything_mod_group": "Rep's Everything Mod"
 }

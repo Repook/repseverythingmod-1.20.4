@@ -18,5 +18,11 @@
     "sounds": [
       "repseverythingmod:entity_eroded_death"
     ]
+  },
+  "item_conch_shell": {
+    "subtitle": "sounds.repseverythingmod.item_conch_shell",
+    "sounds": [
+      "repseverythingmod:item_conch_shell"
+    ]
   }
 }

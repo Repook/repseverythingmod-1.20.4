@@ -17,5 +17,16 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider{
     protected void configure(RegistryWrapper.WrapperLookup arg) {
         getOrCreateTagBuilder(BlockTags.WALLS)
                 .add(ModBlocks.ERODED_BRICK_WALL);
+
+        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
+                .add(ModBlocks.ERODED_BRICKS,
+                        ModBlocks.ERODED_BRICK_STAIRS,
+                        ModBlocks.ERODED_BRICK_SLAB,
+                        ModBlocks.ERODED_BRICK_WALL,
+                        ModBlocks.CHISELED_ERODED_BRICKS
+                        );
+
+        getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
+                .add(ModBlocks.STRAW_BLOCK);
     }
 }

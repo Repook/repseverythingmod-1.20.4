@@ -11,10 +11,7 @@ import net.minecraft.util.Identifier;
 import repook.repseverythingmod.RepsEverythingMod;
 import repook.repseverythingmod.block.ModBlocks;
 import repook.repseverythingmod.entity.ModEntities;
-import repook.repseverythingmod.item.custom.ErodedShieldItem;
-import repook.repseverythingmod.item.custom.LuckyCatBlockItem;
-import repook.repseverythingmod.item.custom.PhantomBootsItem;
-import repook.repseverythingmod.item.custom.ScarecrowItem;
+import repook.repseverythingmod.item.custom.*;
 
 public class ModItems {
 
@@ -36,6 +33,9 @@ public class ModItems {
 
     public static final Item EARTH_POTTERY_SHERD = registerItem("earth_pottery_sherd",
             new Item(new FabricItemSettings()));
+
+    public static final Item CONCH_SHELL = registerItem("conch_shell",
+            new ConchShellItem(new FabricItemSettings()));
 
     public static final Item SCARECROW = registerItem("scarecrow",
             new ScarecrowItem(new FabricItemSettings().maxCount(16)));

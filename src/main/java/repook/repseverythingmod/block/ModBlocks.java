@@ -11,6 +11,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import repook.repseverythingmod.RepsEverythingMod;
+import repook.repseverythingmod.block.custom.ConchShellBlock;
 import repook.repseverythingmod.block.custom.LuckyCatBlock;
 import repook.repseverythingmod.block.custom.StrawBlock;
 import repook.repseverythingmod.block.custom.TraditionalLanternBlock;
@@ -38,6 +39,9 @@ public static final Block TRADITIONAL_LANTERN = registerBlock("traditional_lante
             ,new Block(FabricBlockSettings.copyOf(Blocks.MUD_BRICKS)));
 
 
+    public static final Block CONCH_SHELL = registerBlockWithoutBlockItem("conch_shell"
+            ,new ConchShellBlock(FabricBlockSettings.copyOf(Blocks.GLASS).breakInstantly()));
+
     public static final Block STRAW_BLOCK = registerBlock("straw_block"
             ,new StrawBlock(FabricBlockSettings.copyOf(Blocks.HAY_BLOCK).nonOpaque()));
 
@@ -46,6 +50,7 @@ public static final Block TRADITIONAL_LANTERN = registerBlock("traditional_lante
 
     public static final Block LUCKY_CAT = Registry.register(Registries.BLOCK, new Identifier(RepsEverythingMod.MOD_ID,"lucky_cat")
             ,new LuckyCatBlock(FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK).breakInstantly().nonOpaque()));
+
 
 
 

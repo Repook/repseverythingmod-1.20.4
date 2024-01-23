@@ -23,6 +23,7 @@ import net.minecraft.world.LocalDifficulty;
 import net.minecraft.world.ServerWorldAccess;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
+import repook.repseverythingmod.block.custom.StrawBlock;
 
 public class ScarecrowEntity extends MobEntity {
     private EulerAngle bodyRotation;
@@ -54,7 +55,7 @@ public class ScarecrowEntity extends MobEntity {
 
     public static DefaultAttributeContainer.Builder setAttributes() {
         return HostileEntity.createMobAttributes()
-                .add(EntityAttributes.GENERIC_MAX_HEALTH, 16.0D);
+                .add(EntityAttributes.GENERIC_MAX_HEALTH, 1.0D);
     }
 
     public void setBodyRotation(EulerAngle angle) {

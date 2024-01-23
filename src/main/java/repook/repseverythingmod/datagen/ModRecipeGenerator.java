@@ -100,6 +100,10 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .criterion(hasItem(Items.HAY_BLOCK), conditionsFromItem(Items.HAY_BLOCK))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.SCARECROW)));
 
+        offerStonecuttingRecipe(exporter,RecipeCategory.DECORATIONS,ModBlocks.ERODED_BRICK_STAIRS,ModBlocks.ERODED_BRICKS);
+        offerStonecuttingRecipe(exporter,RecipeCategory.DECORATIONS,ModBlocks.ERODED_BRICK_SLAB,ModBlocks.ERODED_BRICKS);
+        offerStonecuttingRecipe(exporter,RecipeCategory.DECORATIONS,ModBlocks.ERODED_BRICK_WALL,ModBlocks.ERODED_BRICKS);
+        offerStonecuttingRecipe(exporter,RecipeCategory.DECORATIONS,ModBlocks.CHISELED_ERODED_BRICKS,ModBlocks.ERODED_BRICKS);
 
     }
 

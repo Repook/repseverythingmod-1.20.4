@@ -1,9 +1,9 @@
-// 1.20.4	2024-01-23T10:13:33.2916185	Rep's Everything Mod/Block Loot Tables
+// 1.20.4	2024-01-23T15:17:18.9707862	Rep's Everything Mod/Block Loot Tables
 e0dbbca5eea69e82653aef45e10537da87df6884 data\repseverythingmod\loot_tables\blocks\eroded_brick_stairs.json
 81807915a037ea0df82ccac58a3f55011f7e80ca data\repseverythingmod\loot_tables\blocks\chiseled_eroded_bricks.json
 4182fa6936553458b8fff334320783df70b69120 data\repseverythingmod\loot_tables\blocks\traditional_lantern.json
+92d95315b5ad89d2e2fe386b2e1a9c0f65dda2bd data\repseverythingmod\loot_tables\blocks\conch_shell.json
 c2263996f3fa8c46389e5e4fe796b14fde5ad01b data\repseverythingmod\loot_tables\blocks\eroded_brick_wall.json
 36d0f02ddaf13017c4f174451781fdbc5459c13d data\repseverythingmod\loot_tables\blocks\eroded_brick_slab.json
 1216bb786a8118113a6055b1ffb49ce8d7559718 data\repseverythingmod\loot_tables\blocks\lucky_cat.json
-af6ba94c55f13db34b2277298742db537617253d data\repseverythingmod\loot_tables\blocks\straw_block.json
 f9cf6a9308e098510d2de6ebc5b82c87bf95381f data\repseverythingmod\loot_tables\blocks\eroded_bricks.json

@@ -11,6 +11,7 @@ public class ModSounds {
     public static final SoundEvent ENTITY_ERODED_AMBIENT = registerSoundEvent("entity_eroded_ambient");
     public static final SoundEvent ENTITY_ERODED_HURT = registerSoundEvent("entity_eroded_hurt");
     public static final SoundEvent ENTITY_ERODED_DEATH = registerSoundEvent("entity_eroded_death");
+    public static final SoundEvent ITEM_CONCH_SHELL = registerSoundEvent("item_conch_shell");
 
     private static SoundEvent registerSoundEvent(String name) {
         Identifier identifier = new Identifier(RepsEverythingMod.MOD_ID, name);

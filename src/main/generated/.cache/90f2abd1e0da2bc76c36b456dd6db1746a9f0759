@@ -1,6 +1,7 @@
-// 1.20.4	2024-01-23T10:13:33.2906163	Rep's Everything Mod/Model Definitions
+// 1.20.4	2024-01-23T15:17:18.9697848	Rep's Everything Mod/Model Definitions
 c0c290043bde627da1c788ab03559454c95cdb7c assets\repseverythingmod\models\block\eroded_brick_wall_inventory.json
 f8d617b076d863f41da8df2f9ece42a6a073c0a7 assets\repseverythingmod\models\block\eroded_brick_slab_top.json
+5601a8873e8175dc24df0f235b4e2d12ec3d5844 assets\repseverythingmod\models\item\conch_shell.json
 8aeae8fe6c2b457c0469241fbbf7161b1f0c1eb4 assets\repseverythingmod\blockstates\eroded_brick_slab.json
 03f4c86bf725b01b89b92f90bae9c382f9874ee6 assets\repseverythingmod\models\block\eroded_bricks.json
 fe374efb6b8fa586cab9e30b393a860d74a15951 assets\repseverythingmod\models\block\eroded_brick_stairs_outer.json

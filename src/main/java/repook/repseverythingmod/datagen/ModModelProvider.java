@@ -41,6 +41,7 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.PHANTOM_BOOTS, Models.GENERATED);
         itemModelGenerator.register(ModItems.SCARECROW, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CONCH_SHELL, Models.GENERATED);
     }
 
 

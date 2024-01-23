@@ -36,6 +36,7 @@ public class ModItemGroup {
                         entries.add(ModItems.ERODED_SHIELD);
                         entries.add(ModItems.SCARECROW);
                         entries.add(ModBlocks.STRAW_BLOCK);
+                        entries.add(ModItems.CONCH_SHELL);
                         addCustomEnchantmentBooks(entries);
                     }).build());
 
