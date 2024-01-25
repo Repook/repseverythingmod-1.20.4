@@ -1,0 +1,30 @@
+{
+  "parent": "repseverythingmod:repseverythingmod",
+  "criteria": {
+    "eaten_golden_rotten_flesh": {
+      "conditions": {
+        "item": {
+          "items": [
+            "repseverythingmod:golden_rotten_flesh"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "display": {
+    "background": "repseverythingmod:block/straw",
+    "description": "Did you really just eat that?..",
+    "hidden": true,
+    "icon": {
+      "item": "repseverythingmod:golden_rotten_flesh"
+    },
+    "title": "Is This Vegan?"
+  },
+  "requirements": [
+    [
+      "eaten_golden_rotten_flesh"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

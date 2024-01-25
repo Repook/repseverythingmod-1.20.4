@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "repseverythingmod:block/conch_shell",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "repseverythingmod:block/conch_shell"
+    },
+    "facing=south": {
+      "model": "repseverythingmod:block/conch_shell",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "repseverythingmod:block/conch_shell",
+      "y": 270
+    }
+  }
+}

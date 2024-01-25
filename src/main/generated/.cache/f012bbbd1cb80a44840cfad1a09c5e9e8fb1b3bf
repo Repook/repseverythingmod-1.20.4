@@ -1,4 +1,5 @@
-// 1.20.4	2024-01-23T15:17:18.9707862	Rep's Everything Mod/Tags for minecraft:block
-2fa9596496c87221a7c8f7e702ed332c2470235c data\minecraft\tags\blocks\mineable\pickaxe.json
+// 1.20.4	2024-01-25T11:39:45.4197961	Rep's Everything Mod/Tags for minecraft:block
+47cd5e9a2940dba5f48f6256456c01659b5c1f6f data\minecraft\tags\blocks\mineable\pickaxe.json
 82073747bdf7659ef57f07ea73da0ff6c0a67c99 data\minecraft\tags\blocks\mineable\hoe.json
-807b60d4020cf7b0e65420678f64c5a5e72ae73f data\minecraft\tags\blocks\walls.json
+c1dd426956b3b76975b216156df1e5452c51b08d data\minecraft\tags\blocks\mineable\axe.json
+36f615dcf584ed0f82bf8734241db28e551a78e8 data\minecraft\tags\blocks\walls.json

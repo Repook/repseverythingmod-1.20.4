@@ -21,6 +21,7 @@ public class ErodedModel extends GeoModel<ErodedEntity> {
         return new Identifier(RepsEverythingMod.MOD_ID, "textures/entity/eroded.png");
     }
 
+
     @Override
     public Identifier getAnimationResource(ErodedEntity animatable) {
         return new Identifier(RepsEverythingMod.MOD_ID, "animations/eroded.animation.json");
@@ -35,4 +36,6 @@ public class ErodedModel extends GeoModel<ErodedEntity> {
             head.setRotY(entityData.netHeadYaw() * MathHelper.RADIANS_PER_DEGREE);
         }
     }
+
+
 }

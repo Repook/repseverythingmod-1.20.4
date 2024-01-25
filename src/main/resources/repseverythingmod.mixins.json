@@ -5,7 +5,12 @@
 	"mixins": [
 		"ExampleMixin",
 		"PlayerEntityMixin",
-		"HostileEntityMixin",
+		"HostileEntityMixin"
+	],
+	"client": [
+		"ItemRendererAccessor",
+		"ItemRendererMixin",
+		"ModelLoaderMixin"
 
 	],
 	"injectors": {

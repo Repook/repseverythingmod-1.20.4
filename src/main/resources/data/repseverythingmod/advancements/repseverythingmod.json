@@ -1,0 +1,30 @@
+{
+  "criteria": {
+    "has_golden_beetroot": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "repseverythingmod:golden_beetroot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "repseverythingmod:textures/block/straw.png",
+    "description": "The start of a journey.",
+    "icon": {
+      "item": "repseverythingmod:golden_beetroot"
+    },
+    "title": "Rep's Everything Mod!"
+  },
+  "requirements": [
+    [
+      "has_golden_beetroot"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

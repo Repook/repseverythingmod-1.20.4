@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "repseverythingmod:block/gilded_eroded_brick_pillar_top",
+    "side": "repseverythingmod:block/gilded_eroded_brick_pillar"
+  }
+}

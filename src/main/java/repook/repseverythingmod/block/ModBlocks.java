@@ -22,21 +22,45 @@ public class ModBlocks {
 public static final Block TRADITIONAL_LANTERN = registerBlock("traditional_lantern"
         ,new TraditionalLanternBlock(FabricBlockSettings.copyOf(Blocks.LANTERN).breakInstantly()));
 
+    public static final Block CRATE = registerBlock("crate"
+            ,new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
+
     public static final Block ERODED_BRICKS = registerBlock("eroded_bricks"
+            ,new Block(FabricBlockSettings.copyOf(Blocks.PACKED_MUD)));
+
+    public static final Block GILDED_ERODED_BRICKS = registerBlock("gilded_eroded_bricks"
             ,new Block(FabricBlockSettings.copyOf(Blocks.PACKED_MUD)));
 
     public static final Block ERODED_BRICK_STAIRS = registerBlock("eroded_brick_stairs",
             new StairsBlock(ModBlocks.ERODED_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.MUD_BRICK_STAIRS)));
 
+    public static final Block GILDED_ERODED_BRICK_STAIRS = registerBlock("gilded_eroded_brick_stairs",
+            new StairsBlock(ModBlocks.ERODED_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.MUD_BRICK_STAIRS)));
+
     public static final Block ERODED_BRICK_SLAB = registerBlock("eroded_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.MUD_BRICK_SLAB)));
+
+    public static final Block GILDED_ERODED_BRICK_SLAB = registerBlock("gilded_eroded_brick_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.MUD_BRICK_SLAB)));
 
     public static final Block ERODED_BRICK_WALL = registerBlock("eroded_brick_wall",
             new WallBlock(FabricBlockSettings.copyOf(Blocks.MUD_BRICK_WALL)));
 
+    public static final Block GILDED_ERODED_BRICK_WALL = registerBlock("gilded_eroded_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.MUD_BRICK_WALL)));
+
 
     public static final Block CHISELED_ERODED_BRICKS = registerBlock("chiseled_eroded_bricks"
             ,new Block(FabricBlockSettings.copyOf(Blocks.MUD_BRICKS)));
+
+    public static final Block ERODED_BRICK_PILLAR = registerBlock("eroded_brick_pillar"
+            ,new PillarBlock(FabricBlockSettings.copyOf(Blocks.MUD_BRICKS)));
+
+    public static final Block GILDED_CHISELED_ERODED_BRICKS = registerBlock("gilded_chiseled_eroded_bricks"
+            ,new Block(FabricBlockSettings.copyOf(Blocks.MUD_BRICKS)));
+
+    public static final Block GILDED_ERODED_BRICK_PILLAR = registerBlock("gilded_eroded_brick_pillar"
+            ,new PillarBlock(FabricBlockSettings.copyOf(Blocks.MUD_BRICKS)));
 
 
     public static final Block CONCH_SHELL = registerBlockWithoutBlockItem("conch_shell"

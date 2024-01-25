@@ -2,11 +2,13 @@ package repook.repseverythingmod;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.client.model.ModelLoadingRegistry;
 import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.block.entity.BlockEntityRendererFactories;
+import net.minecraft.client.util.ModelIdentifier;
 import repook.repseverythingmod.block.ModBlocks;
 import repook.repseverythingmod.block.entity.ModBlockEntities;
 import repook.repseverythingmod.block.entity.client.LuckyCatRenderer;
@@ -34,7 +36,7 @@ public class RepsEverythingModClient implements ClientModInitializer {
         EntityRendererRegistry.register(ModEntities.SCARECROW, ScarecrowRenderer::new);
 
 
-
+        ModelLoadingRegistry.INSTANCE.registerModelProvider((manager, out) -> new ModelIdentifier(RepsEverythingMod.MOD_ID,"conch_shell_3d","inventory"));
 
     }
 }

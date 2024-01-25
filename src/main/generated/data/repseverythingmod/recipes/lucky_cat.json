@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "minecraft:gold_ingot"
+    },
+    "N": {
+      "item": "minecraft:gold_nugget"
+    }
+  },
+  "pattern": [
+    " I ",
+    "NIN",
+    "NIN"
+  ],
+  "result": {
+    "item": "repseverythingmod:scarecrow"
+  }
+}

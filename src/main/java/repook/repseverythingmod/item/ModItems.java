@@ -31,16 +31,11 @@ public class ModItems {
     public static final Item ERODED_FRAGMENT = registerItem("eroded_fragment",
             new Item(new FabricItemSettings()));
 
-    public static final Item EARTH_POTTERY_SHERD = registerItem("earth_pottery_sherd",
-            new Item(new FabricItemSettings()));
-
     public static final Item CONCH_SHELL = registerItem("conch_shell",
             new ConchShellItem(new FabricItemSettings()));
 
     public static final Item SCARECROW = registerItem("scarecrow",
             new ScarecrowItem(new FabricItemSettings().maxCount(16)));
-
-
 
     public static final Item PHANTOM_BOOTS = registerItem("phantom_boots",
             new PhantomBootsItem( ModArmorMaterials.PHANTOM,ArmorItem.Type.BOOTS,new FabricItemSettings().maxDamage(500)));

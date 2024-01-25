@@ -20,8 +20,11 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
 
         BlockStateModelGenerator.BlockTexturePool eroded = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ERODED_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool crate = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CRATE);
+        BlockStateModelGenerator.BlockTexturePool gilded_eroded = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GILDED_ERODED_BRICKS);
 
         eroded.family(BlockFamilies.register(ModBlocks.ERODED_BRICKS).build());
+        gilded_eroded.family(BlockFamilies.register(ModBlocks.GILDED_ERODED_BRICKS).build());
     blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.TRADITIONAL_LANTERN);
 
 
@@ -33,6 +36,12 @@ public class ModModelProvider extends FabricModelProvider {
         eroded.stairs(ModBlocks.ERODED_BRICK_STAIRS);
         eroded.slab(ModBlocks.ERODED_BRICK_SLAB);
         eroded.wall(ModBlocks.ERODED_BRICK_WALL);
+
+        gilded_eroded.stairs(ModBlocks.GILDED_ERODED_BRICK_STAIRS);
+        gilded_eroded.slab(ModBlocks.GILDED_ERODED_BRICK_SLAB);
+        gilded_eroded.wall(ModBlocks.GILDED_ERODED_BRICK_WALL);
+
+
 
 
     }

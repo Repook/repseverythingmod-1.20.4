@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "repseverythingmod:block/gilded_eroded_bricks"
+  }
+}

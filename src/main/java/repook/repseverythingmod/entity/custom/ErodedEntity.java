@@ -6,15 +6,10 @@ import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.damage.DamageSource;
-import net.minecraft.entity.mob.BlazeEntity;
-import net.minecraft.entity.mob.BreezeEntity;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.mob.HostileEntity;
-import net.minecraft.entity.mob.VexEntity;
-import net.minecraft.entity.passive.ChickenEntity;
-import net.minecraft.entity.passive.MerchantEntity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.GlassBottleItem;
-import net.minecraft.particle.ParticleTypes;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
@@ -27,13 +22,28 @@ import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache
 import software.bernie.geckolib.core.animatable.instance.SingletonAnimatableInstanceCache;
 import software.bernie.geckolib.core.animation.*;
 import software.bernie.geckolib.core.object.PlayState;
+import software.bernie.geckolib.model.GeoModel;
 
-public class ErodedEntity extends HostileEntity implements GeoEntity {
+public class ErodedEntity extends HostileEntity implements GeoEntity  {
 
-    private AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
+    private static boolean isSecondTexture = false;
+
     public ErodedEntity(EntityType<? extends HostileEntity> entityType, World world) {
         super(entityType, world);
     }
+
+    public static boolean isSecondTexture() {
+        return isSecondTexture;
+    }
+
+    public void setSecondTexture(boolean secondTexture) {
+        isSecondTexture = secondTexture;
+    }
+
+
+
+    private AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
+
 
     public static DefaultAttributeContainer.Builder setAttributes() {
         return HostileEntity.createMobAttributes()
@@ -74,12 +84,26 @@ public class ErodedEntity extends HostileEntity implements GeoEntity {
         return PlayState.CONTINUE;
     }
 
+
+
     @Override
     public void tick() {
         super.tick();
-
         spawnRandomParticlesAtFeet(this.getWorld());
+
+        if (!this.getWorld().isClient) {
+            // Check if the entity is below half health
+            if (this.getHealth() <= this.getMaxHealth() / 2 && !this.hasStatusEffect(StatusEffects.STRENGTH)) {
+                // Apply strength effect
+                this.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, Integer.MAX_VALUE, 1, false, false));
+
+                // Switch textures or perform other actions when health is below half
+                this.setSecondTexture(true);
+            }
+        }
     }
+
+
     private void spawnRandomParticlesAtFeet(World world) {
         if (world.isClient) { // Make sure you are on the client side
             double x = getX();
@@ -108,6 +132,7 @@ public class ErodedEntity extends HostileEntity implements GeoEntity {
             }
         }
     }
+
 
 
     private void drillAttack(LivingEntity target){

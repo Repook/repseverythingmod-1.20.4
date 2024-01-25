@@ -8,6 +8,7 @@ import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
 import repook.repseverythingmod.block.ModBlocks;
@@ -20,6 +21,8 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
 
     @Override
     public void generate(RecipeExporter exporter) {
+
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.GOLDEN_BEETROOT)
                 .pattern("GGG")
                 .pattern("GBG")
@@ -100,10 +103,31 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .criterion(hasItem(Items.HAY_BLOCK), conditionsFromItem(Items.HAY_BLOCK))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.SCARECROW)));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SCARECROW)
+                .pattern("SPS")
+                .pattern("PSP")
+                .pattern("SPS")
+                .input('S', Items.STICK)
+                .input('P', Items.OAK_PLANKS)
+                .criterion(hasItem(Items.OAK_PLANKS), conditionsFromItem(Items.OAK_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.CRATE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SCARECROW)
+                .pattern(" I ")
+                .pattern("NIN")
+                .pattern("NIN")
+                .input('I', Items.GOLD_INGOT)
+                .input('N', Items.GOLD_NUGGET)
+                .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.LUCKY_CAT)));
+
         offerStonecuttingRecipe(exporter,RecipeCategory.DECORATIONS,ModBlocks.ERODED_BRICK_STAIRS,ModBlocks.ERODED_BRICKS);
-        offerStonecuttingRecipe(exporter,RecipeCategory.DECORATIONS,ModBlocks.ERODED_BRICK_SLAB,ModBlocks.ERODED_BRICKS);
+        offerStonecuttingRecipe(exporter,RecipeCategory.DECORATIONS,ModBlocks.ERODED_BRICK_SLAB,ModBlocks.ERODED_BRICKS,2);
         offerStonecuttingRecipe(exporter,RecipeCategory.DECORATIONS,ModBlocks.ERODED_BRICK_WALL,ModBlocks.ERODED_BRICKS);
         offerStonecuttingRecipe(exporter,RecipeCategory.DECORATIONS,ModBlocks.CHISELED_ERODED_BRICKS,ModBlocks.ERODED_BRICKS);
+        offerStonecuttingRecipe(exporter,RecipeCategory.DECORATIONS,ModBlocks.ERODED_BRICK_PILLAR,ModBlocks.ERODED_BRICKS);
+
+
 
     }
 

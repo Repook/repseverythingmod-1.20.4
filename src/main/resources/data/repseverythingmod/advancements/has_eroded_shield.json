@@ -1,0 +1,33 @@
+{
+  "parent": "repseverythingmod:has_eroded_fragment",
+  "criteria": {
+    "has_eroded_shield": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "repseverythingmod:eroded_shield"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "repseverythingmod:block/straw",
+    "description": "said it in the title.",
+    "hidden": true,
+    "icon": {
+      "item": "repseverythingmod:eroded_shield",
+      "nbt": "{Damage:0}"
+    },
+    "title": "Eroded Shield Got!"
+  },
+  "requirements": [
+    [
+      "has_eroded_shield"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

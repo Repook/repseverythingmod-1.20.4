@@ -1,0 +1,33 @@
+{
+  "parent": "repseverythingmod:repseverythingmod",
+  "criteria": {
+    "has_phantom_boots": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "repseverythingmod:phantom_boots"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "repseverythingmod:block/straw",
+    "description": "obtain phantom boots.",
+    "hidden": true,
+    "icon": {
+      "item": "repseverythingmod:phantom_boots",
+      "nbt": "{Damage:0}"
+    },
+    "title": "Leap Of Faith"
+  },
+  "requirements": [
+    [
+      "has_phantom_boots"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -16,6 +16,7 @@ import repook.repseverythingmod.item.ModItemGroup;
 import repook.repseverythingmod.item.ModItems;
 import repook.repseverythingmod.particle.ModParticles;
 import repook.repseverythingmod.sound.ModSounds;
+import repook.repseverythingmod.util.ModLootTableModifiers;
 import software.bernie.geckolib.GeckoLib;
 
 public class RepsEverythingMod implements ModInitializer {
@@ -30,6 +31,7 @@ public class RepsEverythingMod implements ModInitializer {
 		ModBlocks.registerModBlocks();
 		ModBlockEntities.registerAllBlockEntities();
 		ModEnchantments.registerModEnchantments();
+		ModLootTableModifiers.modifyLootTables();
 
 		GeckoLib.initialize();
 		ModParticles.registerParticles();

@@ -10,6 +10,7 @@ import net.minecraft.util.Identifier;
 import repook.repseverythingmod.RepsEverythingMod;
 import repook.repseverythingmod.entity.custom.ErodedEntity;
 import repook.repseverythingmod.entity.custom.ScarecrowEntity;
+import software.bernie.geckolib.model.GeoModel;
 
 public class ModEntities {
     public static final EntityType<ErodedEntity> ERODED = Registry.register(

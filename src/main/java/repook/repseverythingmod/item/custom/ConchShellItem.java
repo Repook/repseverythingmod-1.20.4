@@ -1,25 +1,35 @@
 package repook.repseverythingmod.item.custom;
 
-import net.minecraft.block.CarrotsBlock;
-import net.minecraft.block.FarmlandBlock;
-import net.minecraft.block.ShapeContext;
+import net.minecraft.block.*;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.*;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
+import net.minecraft.state.property.DirectionProperty;
+import net.minecraft.state.property.Properties;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.UseAction;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
+import net.minecraft.util.math.MathHelper;
+import net.minecraft.util.shape.VoxelShape;
+import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import repook.repseverythingmod.block.ModBlocks;
 import repook.repseverythingmod.block.custom.ConchShellBlock;
+import repook.repseverythingmod.block.custom.LuckyCatBlock;
 import repook.repseverythingmod.sound.ModSounds;
 
-public class ConchShellItem extends Item {
-    int cooldown;
 
+public class ConchShellItem extends Item {
+
+
+
+
+    int cooldown;
+    public static DirectionProperty FACING = Properties.HORIZONTAL_FACING;
 
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
@@ -35,6 +45,9 @@ public class ConchShellItem extends Item {
 
     }
 
+
+
+
     @Override
     public ActionResult useOnBlock(ItemUsageContext context) {
         World world = context.getWorld();
@@ -44,10 +57,13 @@ public class ConchShellItem extends Item {
         // Check if the player can place the custom conch shell at the targeted block
         if (world.getBlockState(blockPos).isReplaceable() && ModBlocks.CONCH_SHELL.getDefaultState().canPlaceAt(world, blockPos)) {
             // Place the custom conch shell block
-            world.setBlockState(blockPos, ModBlocks.CONCH_SHELL.getDefaultState());
+            float yaw = MathHelper.wrapDegrees(player.getYaw() + 270.0F);
+
+            // Place the custom conch shell block with the calculated rotation
+            world.setBlockState(blockPos, ModBlocks.CONCH_SHELL.getDefaultState().with(FACING, getFacingFromYaw(yaw)));
 
             // Decrease the item stack count
-            if (player != null && !player.isCreative()) {
+            if (!player.isCreative()) {
                 context.getStack().decrement(1);
             }
 
@@ -58,6 +74,10 @@ public class ConchShellItem extends Item {
         }
 
         return super.useOnBlock(context);
+    }
+
+    private Direction getFacingFromYaw(float yaw) {
+        return Direction.fromRotation(yaw);
     }
 
 

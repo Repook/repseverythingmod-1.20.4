@@ -2,9 +2,16 @@
   "replace": false,
   "values": [
     "repseverythingmod:eroded_bricks",
+    "repseverythingmod:gilded_eroded_bricks",
     "repseverythingmod:eroded_brick_stairs",
+    "repseverythingmod:gilded_eroded_brick_stairs",
     "repseverythingmod:eroded_brick_slab",
+    "repseverythingmod:gilded_eroded_brick_slab",
     "repseverythingmod:eroded_brick_wall",
-    "repseverythingmod:chiseled_eroded_bricks"
+    "repseverythingmod:gilded_eroded_brick_wall",
+    "repseverythingmod:chiseled_eroded_bricks",
+    "repseverythingmod:gilded_chiseled_eroded_bricks",
+    "repseverythingmod:eroded_brick_pillar",
+    "repseverythingmod:gilded_eroded_brick_pillar"
   ]
 }

@@ -14,7 +14,7 @@ import net.minecraft.world.World;
 
 public class ErodedShieldItem extends ShieldItem {
     // Cooldown in ticks, initially set to 0
-    int cooldown = 20 * 7; // 5 seconds cooldown in ticks
+    int cooldown; // 5 seconds cooldown in ticks
 
     public ErodedShieldItem(Settings settings) {
         super(settings);

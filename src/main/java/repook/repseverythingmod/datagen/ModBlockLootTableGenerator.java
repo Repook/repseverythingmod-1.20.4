@@ -19,7 +19,11 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.ERODED_BRICK_WALL);
         addDrop(ModBlocks.ERODED_BRICK_STAIRS);
         addDrop(ModBlocks.CHISELED_ERODED_BRICKS);
-        //addDrop(ModBlocks.STRAW_BLOCK);
+        addDrop(ModBlocks.ERODED_BRICK_PILLAR);
+        addDrop(ModBlocks.GILDED_CHISELED_ERODED_BRICKS);
+        addDrop(ModBlocks.GILDED_ERODED_BRICK_PILLAR);
+        addDrop(ModBlocks.CRATE);
+
         addDrop(ModBlocks.CONCH_SHELL, ModItems.CONCH_SHELL);
     }
 }

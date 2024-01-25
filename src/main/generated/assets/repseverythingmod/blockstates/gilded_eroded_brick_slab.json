@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "repseverythingmod:block/gilded_eroded_brick_slab"
+    },
+    "type=double": {
+      "model": "repseverythingmod:block/gilded_eroded_bricks"
+    },
+    "type=top": {
+      "model": "repseverythingmod:block/gilded_eroded_brick_slab_top"
+    }
+  }
+}

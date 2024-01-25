@@ -1,0 +1,32 @@
+{
+  "parent": "repseverythingmod:repseverythingmod",
+  "criteria": {
+    "has_eroded_fragment": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "repseverythingmod:eroded_fragment"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "repseverythingmod:block/straw",
+    "description": "Obtain eroded fragment.",
+    "hidden": true,
+    "icon": {
+      "item": "repseverythingmod:eroded_fragment"
+    },
+    "title": "Fragment Of The Earth"
+  },
+  "requirements": [
+    [
+      "has_eroded_fragment"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

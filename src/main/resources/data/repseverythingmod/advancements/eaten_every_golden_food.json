@@ -1,0 +1,95 @@
+{
+  "parent": "repseverythingmod:eaten_golden_rotten_flesh",
+  "criteria": {
+    "eaten_enchanted_golden_apple": {
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:enchanted_golden_apple"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "eaten_golden_apple": {
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:golden_apple"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "eaten_golden_beetroot": {
+      "conditions": {
+        "item": {
+          "items": [
+            "repseverythingmod:golden_beetroot"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "eaten_golden_carrot": {
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:golden_carrot"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "eaten_golden_rotten_flesh": {
+      "conditions": {
+        "item": {
+          "items": [
+            "repseverythingmod:golden_rotten_flesh"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "eaten_golden_sweet_berries": {
+      "conditions": {
+        "item": {
+          "items": [
+            "repseverythingmod:golden_sweet_berries"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "display": {
+    "background": "repseverythingmod:block/straw",
+    "description": "Eat every gold food in the game.",
+    "hidden": true,
+    "icon": {
+      "item": "minecraft:enchanted_golden_apple"
+    },
+    "title": "1 Million Dollar Dinner"
+  },
+  "requirements": [
+    [
+      "eaten_golden_rotten_flesh"
+    ],
+    [
+      "eaten_golden_beetroot"
+    ],
+    [
+      "eaten_golden_sweet_berries"
+    ],
+    [
+      "eaten_golden_apple"
+    ],
+    [
+      "eaten_enchanted_golden_apple"
+    ],
+    [
+      "eaten_golden_carrot"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "repseverythingmod:has_straw",
+  "criteria": {
+    "has_scarecrow": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "repseverythingmod:scarecrow"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "repseverythingmod:block/straw",
+    "description": "Obtain a scarecrow.",
+    "hidden": true,
+    "icon": {
+      "item": "repseverythingmod:scarecrow"
+    },
+    "title": "Guardian Of The Crops"
+  },
+  "requirements": [
+    [
+      "has_scarecrow"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
