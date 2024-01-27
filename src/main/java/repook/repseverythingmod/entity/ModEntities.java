@@ -1,9 +1,12 @@
 package repook.repseverythingmod.entity;
 
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
+import net.minecraft.client.render.entity.model.SheepEntityModel;
+import net.minecraft.client.render.entity.model.SheepWoolEntityModel;
 import net.minecraft.entity.EntityDimensions;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
+import net.minecraft.entity.passive.SheepEntity;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -17,6 +20,7 @@ public class ModEntities {
             Registries.ENTITY_TYPE, new Identifier(RepsEverythingMod.MOD_ID, "eroded"),
             FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, ErodedEntity::new)
                     .dimensions(EntityDimensions.fixed(1, 1.75f)).build());
+
 
     public static final EntityType<ScarecrowEntity> SCARECROW = Registry.register(
             Registries.ENTITY_TYPE, new Identifier(RepsEverythingMod.MOD_ID, "scarecrow"),

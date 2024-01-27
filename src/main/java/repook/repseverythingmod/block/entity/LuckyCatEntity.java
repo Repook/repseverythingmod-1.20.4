@@ -30,6 +30,7 @@ public class LuckyCatEntity extends BlockEntity implements GeoBlockEntity {
         return PlayState.CONTINUE;
     }
 
+
     @Override
     public AnimatableInstanceCache getAnimatableInstanceCache() {
         return cache;

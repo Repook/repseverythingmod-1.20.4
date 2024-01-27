@@ -31,7 +31,7 @@ public class ErodedShieldItem extends ShieldItem {
         ItemStack itemStack = player.getStackInHand(hand);
 
 
-        if (player.isSneaking() && cooldown <= 0 && itemStack.getDamage() < itemStack.getMaxDamage()) {
+        if (player.isSneaking() && itemStack.getDamage() < itemStack.getMaxDamage() && !player.getItemCooldownManager().isCoolingDown(this)) {
             // Calculate launch direction based on player's rotation
             double launchSpeed = 2.0; // Adjust the launch speed as needed
             double launchDirectionX = -Math.sin(Math.toRadians(player.getYaw())) * Math.cos(Math.toRadians(player.getPitch()));
@@ -52,8 +52,6 @@ public class ErodedShieldItem extends ShieldItem {
 
             return new TypedActionResult<>(ActionResult.SUCCESS, itemStack);
         }
-
-
 
         return super.use(world, player, hand);
     }

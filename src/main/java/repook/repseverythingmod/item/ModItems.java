@@ -24,6 +24,17 @@ public class ModItems {
 
     public static final Item GOLDEN_ROTTEN_FLESH = registerItem("golden_rotten_flesh",
             new Item(new FabricItemSettings().food(ModFoodComponents.GOLDEN_ROTTEN_FLESH)));
+    public static final Item ENCHANTED_GOLDEN_BEETROOT = registerItem("enchanted_golden_beetroot",
+            new EnchantedGoldenFoodItem(new FabricItemSettings().food(ModFoodComponents.ENCHANTED_GOLDEN_BEETROOT)));
+
+    public static final Item ENCHANTED_GOLDEN_SWEET_BERRIES = registerItem("enchanted_golden_sweet_berries",
+            new EnchantedGoldenFoodItem(new FabricItemSettings().food(ModFoodComponents.ENCHANTED_GOLDEN_SWEET_BERRIES)));
+
+    public static final Item ENCHANTED_GOLDEN_ROTTEN_FLESH = registerItem("enchanted_golden_rotten_flesh",
+            new EnchantedGoldenFoodItem(new FabricItemSettings().food(ModFoodComponents.ENCHANTED_GOLDEN_ROTTEN_FLESH)));
+
+    public static final Item ENCHANTED_GOLDEN_CARROT = registerItem("enchanted_golden_carrot",
+            new EnchantedGoldenFoodItem(new FabricItemSettings().food(ModFoodComponents.ENCHANTED_GOLDEN_CARROT)));
 
     public static final Item ERODED_SHIELD = registerItem("eroded_shield",
             new ErodedShieldItem(new FabricItemSettings().maxDamage(500)));
@@ -45,9 +56,6 @@ public class ModItems {
 
     public static final Item ERODED_SPAWN_EGG = registerItem("eroded",
             new SpawnEggItem(ModEntities.ERODED,0x846a4e,0x493228, new FabricItemSettings()));
-
-    public static final Item SCARECROW_SPAWN_EGG = registerItem("scarecrow_spawn_egg",
-            new SpawnEggItem(ModEntities.SCARECROW,0x846a4e,0x493228, new FabricItemSettings()));
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, new Identifier(RepsEverythingMod.MOD_ID,name),item);

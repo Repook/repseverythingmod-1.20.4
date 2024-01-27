@@ -95,7 +95,7 @@ public class ErodedEntity extends HostileEntity implements GeoEntity  {
             // Check if the entity is below half health
             if (this.getHealth() <= this.getMaxHealth() / 2 && !this.hasStatusEffect(StatusEffects.STRENGTH)) {
                 // Apply strength effect
-                this.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, Integer.MAX_VALUE, 1, false, false));
+                this.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, Integer.MAX_VALUE, 0, false, false));
 
                 // Switch textures or perform other actions when health is below half
                 this.setSecondTexture(true);

@@ -103,7 +103,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .criterion(hasItem(Items.HAY_BLOCK), conditionsFromItem(Items.HAY_BLOCK))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.SCARECROW)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SCARECROW)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.CRATE)
                 .pattern("SPS")
                 .pattern("PSP")
                 .pattern("SPS")
@@ -112,14 +112,44 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .criterion(hasItem(Items.OAK_PLANKS), conditionsFromItem(Items.OAK_PLANKS))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.CRATE)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SCARECROW)
-                .pattern(" I ")
-                .pattern("NIN")
-                .pattern("NIN")
-                .input('I', Items.GOLD_INGOT)
-                .input('N', Items.GOLD_NUGGET)
-                .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
-                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.LUCKY_CAT)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.ERODED_BRICK_STAIRS)
+                .pattern("#  ")
+                .pattern("## ")
+                .pattern("###")
+                .input('#', ModBlocks.ERODED_BRICKS)
+                .criterion(hasItem(ModBlocks.ERODED_BRICKS), conditionsFromItem(ModBlocks.ERODED_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ERODED_BRICK_STAIRS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.ERODED_BRICK_SLAB)
+                .pattern("###")
+                .input('#', ModBlocks.ERODED_BRICKS)
+                .criterion(hasItem(ModBlocks.ERODED_BRICKS), conditionsFromItem(ModBlocks.ERODED_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ERODED_BRICK_SLAB)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.ERODED_BRICK_WALL)
+                .pattern("###")
+                .pattern("###")
+                .input('#', ModBlocks.ERODED_BRICKS)
+                .criterion(hasItem(ModBlocks.ERODED_BRICKS), conditionsFromItem(ModBlocks.ERODED_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ERODED_BRICK_WALL)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.CHISELED_ERODED_BRICKS)
+                .pattern("#")
+                .pattern("#")
+                .input('#', ModBlocks.ERODED_BRICK_SLAB)
+                .criterion(hasItem(ModBlocks.ERODED_BRICK_SLAB), conditionsFromItem(ModBlocks.ERODED_BRICK_SLAB))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.CHISELED_ERODED_BRICKS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.ERODED_BRICK_PILLAR)
+                .pattern("#")
+                .pattern("#")
+                .input('#', ModBlocks.ERODED_BRICKS)
+                .criterion(hasItem(ModBlocks.ERODED_BRICKS), conditionsFromItem(ModBlocks.ERODED_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ERODED_BRICK_PILLAR)));
+
+
+
+
 
         offerStonecuttingRecipe(exporter,RecipeCategory.DECORATIONS,ModBlocks.ERODED_BRICK_STAIRS,ModBlocks.ERODED_BRICKS);
         offerStonecuttingRecipe(exporter,RecipeCategory.DECORATIONS,ModBlocks.ERODED_BRICK_SLAB,ModBlocks.ERODED_BRICKS,2);

@@ -5,7 +5,8 @@
 	"mixins": [
 		"ExampleMixin",
 		"PlayerEntityMixin",
-		"HostileEntityMixin"
+		"HostileEntityMixin",
+		"BrewingRecipeRegistryMixin"
 	],
 	"client": [
 		"ItemRendererAccessor",

@@ -1,0 +1,32 @@
+{
+  "parent": "repseverythingmod:repseverythingmod",
+  "criteria": {
+    "has_lucky_cat": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "repseverythingmod:lucky_cat"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "repseverythingmod:block/straw",
+    "description": "Obtain Lucky Cat",
+    "hidden": true,
+    "icon": {
+      "item": "repseverythingmod:lucky_cat"
+    },
+    "title": "Lucky Duc-Kitty"
+  },
+  "requirements": [
+    [
+      "has_lucky_cat"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

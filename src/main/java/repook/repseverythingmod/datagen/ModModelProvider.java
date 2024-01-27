@@ -31,7 +31,6 @@ public class ModModelProvider extends FabricModelProvider {
     //blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.STRAW_BLOCK);
 
     blockStateModelGenerator.registerParentedItemModel(ModItems.ERODED_SPAWN_EGG, ModelIds.getMinecraftNamespacedItem("template_spawn_egg"));
-    blockStateModelGenerator.registerParentedItemModel(ModItems.SCARECROW_SPAWN_EGG, ModelIds.getMinecraftNamespacedItem("template_spawn_egg"));
 
         eroded.stairs(ModBlocks.ERODED_BRICK_STAIRS);
         eroded.slab(ModBlocks.ERODED_BRICK_SLAB);

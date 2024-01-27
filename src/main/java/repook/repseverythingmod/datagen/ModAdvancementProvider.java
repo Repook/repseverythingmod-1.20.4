@@ -32,15 +32,14 @@ public class ModAdvancementProvider extends FabricAdvancementProvider {
 
 
 
-
-        Advancement goldenRottenFlesh = Advancement.Builder.create()
-                .display(new AdvancementDisplay(new ItemStack(ModItems.PHANTOM_BOOTS),
-                        Text.literal("Leap Of Faith"), Text.literal("obtain phantom boots."),
+/*        Advancement goldenRottenFlesh = Advancement.Builder.create()
+                .display(new AdvancementDisplay(new ItemStack(ModItems.CONCH_SHELL),
+                        Text.literal("Island-Equivalent Rooster"), Text.literal("Obtain A Conch Shell"),
                         Optional.of(new Identifier(RepsEverythingMod.MOD_ID, "block/straw")), AdvancementFrame.TASK,
                         true, true, true))
-                .criterion("has_phantom_boots", InventoryChangedCriterion.Conditions.items(ModItems.PHANTOM_BOOTS))
+                .criterion("has_conch_shell", InventoryChangedCriterion.Conditions.items(ModItems.CONCH_SHELL))
 
-                .build(consumer, RepsEverythingMod.MOD_ID + ":has_phantom_boots").value();
+                .build(consumer, RepsEverythingMod.MOD_ID + ":has_conch_shell").value();*/
 
 
 

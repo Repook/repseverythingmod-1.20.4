@@ -11,10 +11,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import repook.repseverythingmod.RepsEverythingMod;
-import repook.repseverythingmod.block.custom.ConchShellBlock;
-import repook.repseverythingmod.block.custom.LuckyCatBlock;
-import repook.repseverythingmod.block.custom.StrawBlock;
-import repook.repseverythingmod.block.custom.TraditionalLanternBlock;
+import repook.repseverythingmod.block.custom.*;
 
 public class ModBlocks {
 
@@ -73,7 +70,7 @@ public static final Block TRADITIONAL_LANTERN = registerBlock("traditional_lante
 
 
     public static final Block LUCKY_CAT = Registry.register(Registries.BLOCK, new Identifier(RepsEverythingMod.MOD_ID,"lucky_cat")
-            ,new LuckyCatBlock(FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK).breakInstantly().nonOpaque()));
+            ,new LuckyCatBlock(FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK).nonOpaque().breakInstantly()));
 
 
 

@@ -6,7 +6,7 @@
   "fallback": "minecraft:empty",
   "elements": [
     {
-      "weight": 1,
+      "weight": 15,
       "element": {
         "location": "repseverythingmod:hallway",
         "processors": "minecraft:empty",
@@ -15,7 +15,7 @@
       }
     },
     {
-      "weight": 1,
+      "weight": 15,
       "element": {
         "location": "repseverythingmod:hallway_pots",
         "processors": "minecraft:empty",
@@ -24,7 +24,7 @@
       }
     },
     {
-      "weight": 1,
+      "weight": 15,
       "element": {
         "location": "repseverythingmod:hallway_trapped",
         "processors": "minecraft:empty",
@@ -33,7 +33,7 @@
       }
     },
     {
-      "weight": 2,
+      "weight": 15,
       "element": {
         "location": "repseverythingmod:4_way_split",
         "processors": "minecraft:empty",
@@ -42,7 +42,7 @@
       }
     },
     {
-      "weight": 1,
+      "weight": 15,
       "element": {
         "location": "repseverythingmod:staircase",
         "processors": "minecraft:empty",
@@ -51,9 +51,54 @@
       }
     },
     {
-      "weight": 1,
+      "weight": 15,
       "element": {
         "location": "repseverythingmod:hallway_start",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 15,
+      "element": {
+        "location": "repseverythingmod:corner_hallway",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 15,
+      "element": {
+        "location": "repseverythingmod:modded_treasure_room",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 15,
+      "element": {
+        "location": "repseverythingmod:lucky_cat_trap_room",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 15,
+      "element": {
+        "location": "repseverythingmod:tnt_hallway",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 40,
+      "element": {
+        "location": "repseverythingmod:eroded_room",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"

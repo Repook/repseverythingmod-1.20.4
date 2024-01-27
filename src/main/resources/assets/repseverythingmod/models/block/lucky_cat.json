@@ -5,9 +5,8 @@
     32,
     32
   ],
+  "textures":{"particle":"minecraft:block/gold_block"},
   "display": {
-
-    "particle": "repseverythingmod:block/lucky_cat.png",
 
     "ground": {
       "translation": [

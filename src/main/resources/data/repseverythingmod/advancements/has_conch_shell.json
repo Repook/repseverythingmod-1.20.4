@@ -1,0 +1,32 @@
+{
+  "parent": "repseverythingmod:repseverythingmod",
+  "criteria": {
+    "has_conch_shell": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "repseverythingmod:conch_shell"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "repseverythingmod:block/straw",
+    "description": "Obtain A Conch Shell",
+    "hidden": true,
+    "icon": {
+      "item": "repseverythingmod:conch_shell"
+    },
+    "title": "Island-Equivalent Rooster"
+  },
+  "requirements": [
+    [
+      "has_conch_shell"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

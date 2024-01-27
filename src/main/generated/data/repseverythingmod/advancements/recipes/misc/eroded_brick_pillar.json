@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_gold_ingot": {
+    "has_eroded_bricks": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:gold_ingot"
+              "repseverythingmod:eroded_bricks"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:lucky_cat"
+        "recipe": "minecraft:eroded_brick_pillar"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -23,12 +23,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_gold_ingot"
+      "has_eroded_bricks"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:lucky_cat"
+      "minecraft:eroded_brick_pillar"
     ]
   }
 }

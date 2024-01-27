@@ -1,0 +1,32 @@
+{
+  "parent": "repseverythingmod:repseverythingmod",
+  "criteria": {
+    "has_crate": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "repseverythingmod:crate"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "repseverythingmod:block/straw",
+    "description": "Obtain A Crate Block",
+    "hidden": true,
+    "icon": {
+      "item": "repseverythingmod:crate"
+    },
+    "title": "Good? No, Crate!"
+  },
+  "requirements": [
+    [
+      "has_crate"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

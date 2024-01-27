@@ -4,8 +4,12 @@
   "enchantment.repseverythingmod.frost": "Frost",
 
   "item.repseverythingmod.golden_beetroot": "Golden Beetroot",
+  "item.repseverythingmod.enchanted_golden_beetroot": "Enchanted Golden Beetroot",
   "item.repseverythingmod.golden_sweet_berries": "Golden Sweet Berries",
+  "item.repseverythingmod.enchanted_golden_sweet_berries": "Enchanted Golden Sweet Berries",
   "item.repseverythingmod.golden_rotten_flesh": "Golden Rotten Flesh",
+  "item.repseverythingmod.enchanted_golden_rotten_flesh": "Enchanted Golden Rotten Flesh",
+  "item.repseverythingmod.enchanted_golden_carrot": "Enchanted Golden Carrot",
   "item.repseverythingmod.eroded_fragment": "Eroded Fragment",
   "item.repseverythingmod.phantom_boots": "Phantom Boots",
   "item.repseverythingmod.eroded_shield": "Eroded Shield",
@@ -37,6 +41,16 @@
   "sounds.repseverythingmod.entity_eroded_hurt": "Eroded hurt",
   "sounds.repseverythingmod.entity_eroded_death": "Eroded dies",
   "sounds.repseverythingmod.item_conch_shell": "Conch Shell wails",
+
+  "item.minecraft.potion.effect.haste_potion": "Haste Potion",
+  "item.minecraft.splash_potion.effect.haste_potion": "Splash Haste Potion",
+  "item.minecraft.lingering_potion.effect.haste_potion": "Lingering Haste Potion",
+  "item.minecraft.tipped_arrow.effect.haste_potion": "Haste Tipped Arrow",
+
+  "item.minecraft.potion.effect.strong_haste_potion": "Haste Potion",
+  "item.minecraft.splash_potion.effect.strong_haste_potion": "Splash Haste Potion",
+  "item.minecraft.lingering_potion.effect.strong_haste_potion": "Lingering Haste Potion",
+  "item.minecraft.tipped_arrow.effect.strong_haste_potion": "Haste Tipped Arrow",
 
   "itemgroup.reps_everything_mod_group": "Rep's Everything Mod"
 }

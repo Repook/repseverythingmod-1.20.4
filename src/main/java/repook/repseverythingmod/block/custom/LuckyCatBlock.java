@@ -3,7 +3,9 @@ package repook.repseverythingmod.block.custom;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.DirectionProperty;
 import net.minecraft.state.property.Properties;
@@ -12,6 +14,7 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
+import net.minecraft.world.WorldAccess;
 import org.jetbrains.annotations.Nullable;
 import repook.repseverythingmod.block.entity.LuckyCatEntity;
 import software.bernie.example.block.GeckoHabitatBlock;
@@ -33,6 +36,19 @@ public class LuckyCatBlock extends BlockWithEntity{
         return null;
     }
 
+    @Override
+    public void onBroken(WorldAccess world, BlockPos pos, BlockState state) {
+        super.onBroken(world, pos, state);
+
+
+        if (!world.isClient() && !(world instanceof ServerWorld && isCreative((ServerWorld) world))) {
+
+            dropStacks(state, (World) world, pos);
+        }
+    }
+    private boolean isCreative(ServerWorld world) {
+        return world.getPlayers().stream().anyMatch(player -> player.interactionManager.isCreative());
+    }
 
 
     @Nullable
@@ -56,8 +72,10 @@ public class LuckyCatBlock extends BlockWithEntity{
     }
 
 
-
-
+    @Override
+    protected void spawnBreakParticles(World world, PlayerEntity player, BlockPos pos, BlockState state) {
+        super.spawnBreakParticles(world, player, pos, state);
+    }
 
     @Override
     public BlockRenderType getRenderType(BlockState state) {

@@ -4,13 +4,18 @@ import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentLevelEntry;
 import net.minecraft.item.*;
+import net.minecraft.potion.Potion;
+import net.minecraft.potion.PotionUtil;
+import net.minecraft.potion.Potions;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import repook.repseverythingmod.RepsEverythingMod;
 import repook.repseverythingmod.block.ModBlocks;
 import repook.repseverythingmod.enchantment.ModEnchantments;
+import repook.repseverythingmod.potion.ModPotions;
 
 public class ModItemGroup {
 
@@ -21,8 +26,12 @@ public class ModItemGroup {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.reps_everything_mod_group"))
                     .icon(() -> new ItemStack(ModItems.GOLDEN_BEETROOT)).entries((displayContext, entries) -> {
                         entries.add(ModItems.GOLDEN_BEETROOT);
+                        entries.add(ModItems.ENCHANTED_GOLDEN_BEETROOT);
                         entries.add(ModItems.GOLDEN_SWEET_BERRIES);
+                        entries.add(ModItems.ENCHANTED_GOLDEN_SWEET_BERRIES);
                         entries.add(ModItems.GOLDEN_ROTTEN_FLESH);
+                        entries.add(ModItems.ENCHANTED_GOLDEN_ROTTEN_FLESH);
+                        entries.add(ModItems.ENCHANTED_GOLDEN_CARROT);
                         entries.add(ModBlocks.TRADITIONAL_LANTERN);
                         entries.add(ModItems.LUCKY_CAT_BLOCK_ITEM);
                         entries.add(ModItems.PHANTOM_BOOTS);

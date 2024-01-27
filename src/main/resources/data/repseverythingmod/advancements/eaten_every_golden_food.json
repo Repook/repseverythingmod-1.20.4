@@ -31,11 +31,31 @@
       },
       "trigger": "minecraft:consume_item"
     },
+    "eaten_enchanted_golden_beetroot": {
+      "conditions": {
+        "item": {
+          "items": [
+            "repseverythingmod:enchanted_golden_beetroot"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
     "eaten_golden_carrot": {
       "conditions": {
         "item": {
           "items": [
             "minecraft:golden_carrot"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "eaten_enchanted_golden_carrot": {
+      "conditions": {
+        "item": {
+          "items": [
+            "repseverythingmod:enchanted_golden_carrot"
           ]
         }
       },
@@ -51,11 +71,31 @@
       },
       "trigger": "minecraft:consume_item"
     },
+    "eaten_enchanted_golden_rotten_flesh": {
+      "conditions": {
+        "item": {
+          "items": [
+            "repseverythingmod:enchanted_golden_rotten_flesh"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
     "eaten_golden_sweet_berries": {
       "conditions": {
         "item": {
           "items": [
             "repseverythingmod:golden_sweet_berries"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "eaten_enchanted_golden_sweet_berries": {
+      "conditions": {
+        "item": {
+          "items": [
+            "repseverythingmod:enchanted_golden_sweet_berries"
           ]
         }
       },
@@ -76,10 +116,19 @@
       "eaten_golden_rotten_flesh"
     ],
     [
+      "eaten_enchanted_golden_rotten_flesh"
+    ],
+    [
       "eaten_golden_beetroot"
     ],
     [
+      "eaten_enchanted_golden_beetroot"
+    ],
+    [
       "eaten_golden_sweet_berries"
+    ],
+    [
+      "eaten_enchanted_golden_sweet_berries"
     ],
     [
       "eaten_golden_apple"
@@ -89,6 +138,9 @@
     ],
     [
       "eaten_golden_carrot"
+    ],
+    [
+      "eaten_enchanted_golden_carrot"
     ]
   ],
   "sends_telemetry_event": true
