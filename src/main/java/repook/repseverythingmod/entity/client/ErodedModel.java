@@ -13,7 +13,11 @@ import software.bernie.geckolib.model.data.EntityModelData;
 public class ErodedModel extends GeoModel<ErodedEntity> {
     @Override
     public Identifier getModelResource(ErodedEntity animatable) {
-        return new Identifier(RepsEverythingMod.MOD_ID, "geo/eroded.geo.json");
+        if (animatable.isMad()){
+            return new Identifier(RepsEverythingMod.MOD_ID, "geo/eroded_mini.geo.json");
+        } else{
+            return new Identifier(RepsEverythingMod.MOD_ID, "geo/eroded.geo.json");
+        }
     }
 
     @Override
